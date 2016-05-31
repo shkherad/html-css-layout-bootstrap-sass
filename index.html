@@ -8,10 +8,21 @@
     <body>
       <h1>Example</h1>
       <div class="container">
-        <div class="row article">
-          <div class="col-md-8">.col-md-8</div>
-          <div class="col-md-4">.col-md-4</div>
-        </div>
+        <article>
+          <section> container 1</section>
+          <section> container 2</section>
+          <section> container 3</section>
+        </article>
+        <article>
+          <section> container 4</section>
+          <section> container 5</section>
+          <section> container 6</section>
+        </article>
+        <article>
+          <section> container 7</section>
+          <section> container 9</section>
+          <section> container 9</section>
+        </article>
       </div>
 
       <div class="container">
@@ -21,5 +32,53 @@
           <section>Should be .col-md-4</section>
         </article>
       </div>
+
+
+
+
+
+
+      <!-- Button trigger modal -->
+      <button type="button" id="launch-modal" data-toggle="modal" data-target="#myModal">
+        Sign In
+      </button>
+
+
+      <div id="sign-in-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">SIGN IN FORM</h4>
+            </div>
+            <div class="modal-body">
+
+              <form id="sign-in-form">
+                <fieldset class="form-group">
+                  <label for="formGroupExampleInput">Email</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="formGroupExampleInput2">Password</label>
+                  <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+                </fieldset>
+              </form>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Sign In</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+
+
+
+
+
+
     </body>
 </html>

@@ -1,10 +1,22 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/';
 
-$background-color: #4e4e4e;
-$font-color: #dfdfdf;
+$background-color: #fefefe;
+$font-color: #0c0c0c;
 
 body {
   background-color: $background-color;
   color: $font-color;
+}
+
+div {
+  border: 1px solid #000;
+}
+
+article{
+  @include make-row();
+  section {
+    @include make-xs-column(4);
+    border: 1px solid black;
+  }
 }
